@@ -6,7 +6,7 @@ let
 in
 {
   options.accounts.${username}.applications.nixvim.plugins.${plugin_name} = {
-    mapping = lib.mkOption {
+    mappings = lib.mkOption {
       type = lib.types.attrs;
       default = {
         "<C-Space>" = "cmp.mapping.complete()";
@@ -21,6 +21,6 @@ in
     };
   };
   config = lib.mkIf (account.enable && nixvim.enable) {
-    home-manager.users.${username}.programs.nixvim.plugins.${plugin_name}.settings.mapping = nixvim.plugins.${plugin_name}.mapping;
+    home-manager.users.${username}.programs.nixvim.plugins.${plugin_name}.settings.mapping = nixvim.plugins.${plugin_name}.mappings;
   };
 }
