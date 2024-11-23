@@ -6,6 +6,7 @@ in
   imports = [
     ./modesettings.nix
     ./open.nix
+    ./package.nix
     ./power_management
     ./settings_menu.nix
   ];
