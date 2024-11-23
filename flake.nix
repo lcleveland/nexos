@@ -1,7 +1,7 @@
 {
   description = "A very basic flake";
 
-  outputs = { home_manager_stable, nixpkgs_stable, nixpkgs_unstable, self }@inputs:
+  outputs = { home_manager_stable, nixpkgs_stable, nixpkgs_unstable, nixvim, self }@inputs:
     let
       base_modules = [
         home_manager_stable.nixosModules.home-manager
