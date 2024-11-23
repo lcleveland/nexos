@@ -11,6 +11,6 @@ in
     };
   };
   config = lib.mkIf (account.enable && account.use_global_packages) {
-    home-manager.users.lcleveland.useGlobalPackages = account.use_global_packages;
+    home-manager.useGlobalPkgs = account.use_global_packages;
   };
 }
