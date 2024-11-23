@@ -2,5 +2,6 @@
   imports = [
     ./firefox
     ./git
+    ./nixvim
   ];
 }
