@@ -13,6 +13,9 @@ in
     };
   };
   config = lib.mkIf (account.enable && git.enable) {
-    home-manager.users.lcleveland.programs.gh.gitCredentialHelper.enable = git.credential_helper;
+    home-manager.users.lcleveland.programs.gh = {
+      enable = git.credential_helper;
+      gitCredentialHelper.enable = git.credential_helper;
+    };
   };
 }
