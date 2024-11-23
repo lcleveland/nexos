@@ -18,7 +18,7 @@
     in
     {
       nixosConfigurations = {
-        dream = make_system ./profiles/dream.nix;
+        DREAM = make_system ./profiles/dream.nix;
       };
     };
   inputs = {
