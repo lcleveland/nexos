@@ -3,5 +3,5 @@
     ./hardware_configurations/dream.nix
   ];
   accounts.lcleveland.settings.enable = true;
-  accounts.lcleveland.settings.email = "test";
+  system.settings.desktop_environment.kde.enable = true;
 }
