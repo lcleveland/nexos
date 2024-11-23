@@ -10,7 +10,7 @@ in
     ./settings_menu.nix
   ];
   config = lib.mkIf (graphics.enable && graphics.enabled_graphics == "nvidia") {
-    hardware.graphics.enable = true;
+    hardware.opengl.enable = true;
     services.xserver.videoDrivers = [ "nvidia" ];
   };
 }

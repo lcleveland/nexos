@@ -11,6 +11,6 @@ in
     };
   };
   config = lib.mkIf (graphics.enable && graphics.enabled_graphics == "nvidia") {
-    hardware.nvidia.powerManagement = graphics.nvidia.power_management.enable;
+    hardware.nvidia.powerManagement.enable = graphics.nvidia.power_management.enable;
   };
 }
