@@ -1,6 +1,6 @@
 { config, lib, ... }:
 let
-  account = config.accounts.lcleveland;
+  account = config.accounts.lcleveland.settings;
   git = config.accounts.lcleveland.applications.git;
 in
 {

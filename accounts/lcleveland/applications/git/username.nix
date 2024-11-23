@@ -1,6 +1,6 @@
 { config, lib, ... }:
 let
-  account = config.accounts.lcleveland;
+  account = config.accounts.lcleveland.settings;
   git = config.accounts.lcleveland.applications.git;
 in
 {
@@ -12,6 +12,6 @@ in
     };
   };
   config = lib.mkIf (git.enable && account.enable) {
-    home-manager.users.lcleveland.programs.git.userNamep = git.username;
+    home-manager.users.lcleveland.programs.git.userName = git.username;
   };
 }
