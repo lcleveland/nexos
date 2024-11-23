@@ -5,4 +5,5 @@
   accounts.lcleveland.settings.enable = true;
   system.settings.graphics.enable = true;
   system.settings.boot.kernel.package = pkgs.linuxPackages_xanmod;
+  system.settings.network.hostname = "DREAM";
 }
