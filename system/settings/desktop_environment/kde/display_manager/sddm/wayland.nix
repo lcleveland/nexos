@@ -11,7 +11,7 @@ in
       description = lib.mdDoc "Use Wayland for the display manager";
     };
   };
-  config = lib.mkIf (desktop_environment.enabled_environment == "kde" && sddm.enable && sddm.wayland) {
+  config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "kde" && sddm.enable && sddm.wayland) {
     services.displayManager.sddm.wayland.enable = sddm.wayland;
   };
 }

@@ -11,7 +11,7 @@ in
       description = lib.mdDoc "Enable SDDM as the display manager";
     };
   };
-  config = lib.mkIf (desktop_environment.enabled_environment == "kde" && sddm.enable) {
+  config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "kde" && sddm.enable) {
     services.displayManager.sddm.enable = sddm.enable;
   };
 }
