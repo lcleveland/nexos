@@ -9,7 +9,7 @@ in
     sources = lib.mkOption {
       type = lib.types.listOf lib.types.attrs;
       default = [
-        { }
+        { name = "codeium"; }
       ];
       description = lib.mdDoc "Sources for cmp plugin";
     };
