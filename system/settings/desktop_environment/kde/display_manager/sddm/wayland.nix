@@ -1,6 +1,6 @@
 { config, lib, ... }:
 let
-  kde = config.system.settings.desktop_environment.kde;
+  desktop_environment = config.system.settings.desktop_environment;
   sddm = config.system.settings.desktop_environment.kde.display_manager.sddm;
 in
 {
@@ -11,7 +11,7 @@ in
       description = lib.mdDoc "Use Wayland for the display manager";
     };
   };
-  config = lib.mkIf (kde.enable && sddm.enable && sddm.wayland) {
+  config = lib.mkIf (desktop_environment.enabled_environment == "kde" && sddm.enable && sddm.wayland) {
     services.displayManager.sddm.wayland.enable = sddm.wayland;
   };
 }

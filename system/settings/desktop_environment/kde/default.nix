@@ -5,7 +5,6 @@ in
 {
   imports = [
     ./display_manager
-    ./enable.nix
   ];
   config = lib.mkIf (desktop_environment.enabled_environment == "kde") {
     services.xserver.enable = true;

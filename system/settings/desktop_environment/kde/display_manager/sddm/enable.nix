@@ -1,6 +1,6 @@
 { config, lib, ... }:
 let
-  kde = config.system.settings.desktop_environment.kde;
+  desktop_environment = config.system.settings.desktop_environment;
   sddm = config.system.settings.desktop_environment.kde.display_manager.sddm;
 in
 {
@@ -11,7 +11,7 @@ in
       description = lib.mdDoc "Enable SDDM as the display manager";
     };
   };
-  config = lib.mkIf (kde.enable && sddm.enable) {
+  config = lib.mkIf (desktop_environment.enabled_environment == "kde" && sddm.enable) {
     services.displayManager.sddm.enable = sddm.enable;
   };
 }
