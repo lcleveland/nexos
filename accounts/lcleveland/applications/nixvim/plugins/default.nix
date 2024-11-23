@@ -1,6 +1,5 @@
 { ... }: {
   imports = [
-    ./enable.nix
-    ./plugins
+
   ];
 }
