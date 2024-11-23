@@ -10,6 +10,7 @@ in
       type = lib.types.listOf lib.types.attrs;
       default = [
         { name = "codeium"; }
+        { name = "nvim_lsp"; }
       ];
       description = lib.mdDoc "Sources for cmp plugin";
     };
