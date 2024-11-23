@@ -7,8 +7,8 @@ in
 {
   options.accounts.${username}.applications.nixvim.plugins.${plugin_name} = {
     parser_dir = lib.mkOption {
-      type = lib.types.bool;
-      default = true;
+      type = lib.types.str;
+      default = "/home/${username}/.config/nvim/treesitter";
       description = lib.mdDoc "Parser install directory";
     };
   };
