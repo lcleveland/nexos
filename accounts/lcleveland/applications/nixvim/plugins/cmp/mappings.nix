@@ -17,7 +17,7 @@ in
         "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
         "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
       };
-      description = lib.mdDoc "Enable ${plugin_name} plugin";
+      description = lib.mdDoc "Mappings for cmp plugin";
     };
   };
   config = lib.mkIf (account.enable && nixvim.enable) {
