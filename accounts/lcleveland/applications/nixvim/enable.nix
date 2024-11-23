@@ -16,6 +16,7 @@ in
       imports = [
         inputs.nixvim.homeManagerModules.nixvim
       ];
+      programs.nixvim.enable = nixvim.enable;
     };
   };
 }
