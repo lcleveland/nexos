@@ -1,5 +1,6 @@
 { config, lib, ... }:
 let
+  desktop_environment = config.system.settings.desktop_environment;
   kde = config.system.settings.desktop_environment.kde;
 in
 {
@@ -10,7 +11,7 @@ in
       description = "Enable the KDE desktop environment.";
     };
   };
-  config = lib.mkIf kde.enable {
+  config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "kde") {
     services.xserver.enable = kde.enable;
     services.desktopManager.plasma6.enable = kde.enable;
   };
