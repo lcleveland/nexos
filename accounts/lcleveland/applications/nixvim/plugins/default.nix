@@ -6,6 +6,7 @@
     (import ./lsp { username = "lcleveland"; plugin_name = "lsp"; })
     (import ./lsp-format { username = "lcleveland"; plugin_name = "lsp-format"; })
     (import ./none-ls { username = "lcleveland"; plugin_name = "none-ls"; })
+    (import ./nvim-tree { username = "lcleveland"; plugin_name = "nvim-tree"; })
     (import ./treesitter { username = "lcleveland"; plugin_name = "treesitter"; })
     (import ./which-key { username = "lcleveland"; plugin_name = "which-key"; })
   ];
