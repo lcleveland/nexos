@@ -5,7 +5,7 @@ let
 in
 {
   config = lib.mkIf (account.enable && libvirt.enable) {
-    home-manager.users.lcleveland.home.dconf.settings = {
+    home-manager.users.lcleveland.dconf.settings = {
       "org/virt-manager/virt-manager/connections" = {
         autoconnect = [ "qemu:///system" ];
         uris = [ "qemu:///system" ];
