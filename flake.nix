@@ -1,7 +1,7 @@
 {
   description = "A very basic flake";
 
-  outputs = { home_manager_stable, nixpkgs_stable, nixpkgs_unstable, nixvim, self }@inputs:
+  outputs = { home_manager_stable, nixpkgs_stable, nixpkgs_unstable, nixvim, plasma_manager, self }@inputs:
     let
       base_modules = [
         home_manager_stable.nixosModules.home-manager
@@ -35,6 +35,11 @@
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs_stable";
+    };
+    plasma_manager = {
+      url = "github:nix-community/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs_stable";
+      inputs.home-manager.follows = "home_manager_stable";
     };
   };
 }
