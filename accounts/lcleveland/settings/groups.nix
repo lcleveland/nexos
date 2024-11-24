@@ -6,7 +6,7 @@ in
   options.accounts.lcleveland.settings = {
     groups = lib.mkOption {
       type = lib.types.listOf lib.types.str;
-      default = [ "wheel" "networkmanager" ];
+      default = [ "wheel" "networkmanager" "libvirtd" ];
       description = "Groups for the user";
     };
   };
