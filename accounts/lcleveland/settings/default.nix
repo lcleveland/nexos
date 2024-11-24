@@ -10,5 +10,6 @@
     ./state_version.nix
     ./use_global_packages.nix
     ./username.nix
+    ./virt_manager.nix
   ];
 }
