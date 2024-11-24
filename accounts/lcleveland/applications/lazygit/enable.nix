@@ -12,6 +12,6 @@ in
     };
   };
   config = lib.mkIf (account.enable && lazygit.enable) {
-    home-manager.users.lcleveland.home.packages = pkgs.lazygit;
+    home-manager.users.lcleveland.home.packages = [ pkgs.lazygit ];
   };
 }
