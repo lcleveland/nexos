@@ -6,7 +6,6 @@ in
   imports = [
     ./display_manager
     ./excluded_packages.nix
-    #./qt.nix
   ];
   config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "kde") {
     services.xserver.enable = true;
