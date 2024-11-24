@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   account = config.accounts.lcleveland.settings;
-  quickemu = config.accounts.lcleveland.applications.lazygit;
+  quickemu = config.accounts.lcleveland.applications.quickemu;
 in
 {
   options.accounts.lcleveland.applications.quickemu = {

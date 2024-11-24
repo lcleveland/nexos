@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   account = config.accounts.lcleveland.settings;
-  icedtea = config.accounts.lcleveland.applications.lazygit;
+  icedtea = config.accounts.lcleveland.applications.icedtea;
 in
 {
   options.accounts.lcleveland.applications.icedtea = {

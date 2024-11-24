@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   account = config.accounts.lcleveland.settings;
-  firacode = config.accounts.lcleveland.applications.lazygit;
+  firacode = config.accounts.lcleveland.applications.firacode;
 in
 {
   options.accounts.lcleveland.applications.firacode = {
