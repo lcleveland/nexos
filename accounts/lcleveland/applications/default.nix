@@ -7,7 +7,6 @@
     ./nixvim
     ./orcaslicer
     ./quickemu
-    ./quickgui
     ./steam
   ];
 }
