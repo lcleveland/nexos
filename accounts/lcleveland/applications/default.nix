@@ -9,5 +9,6 @@
     ./orcaslicer
     ./quickemu
     ./steam
+    ./teams
   ];
 }
