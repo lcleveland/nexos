@@ -4,9 +4,10 @@
   outputs = { home_manager_stable, nixpkgs_stable, nixpkgs_unstable, nixvim, plasma_manager, self }@inputs:
     let
       base_modules = [
-        home_manager_stable.nixosModules.home-manager
-        ./system
         ./accounts
+        home_manager_stable.nixosModules.home-manager
+        inputs.plasma_manager.homeManagerModules.plasma-manager
+        ./system
       ];
       make_system = profile:
         nixpkgs_stable.lib.nixosSystem {
