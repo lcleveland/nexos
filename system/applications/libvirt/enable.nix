@@ -7,7 +7,7 @@ in
     enable = lib.mkOption {
       type = lib.types.bool;
       default = true;
-      description = "Enable QEMU.";
+      description = "Enable libvirt.";
     };
   };
   config = lib.mkIf libvirt.enable {
