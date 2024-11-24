@@ -5,7 +5,7 @@ in
 {
   options.system.settings.desktop_environment.kde = {
     excluded_packages = lib.mkOption {
-      type = lib.types.listOf lib.types.pkgs;
+      type = lib.types.listOf lib.types.package;
       default = with pkgs.kdePackages; [
         kate
       ];
