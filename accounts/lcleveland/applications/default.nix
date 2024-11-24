@@ -6,6 +6,7 @@
     ./lazygit
     ./nixvim
     ./orcaslicer
+    ./quickemu
     ./steam
   ];
 }
