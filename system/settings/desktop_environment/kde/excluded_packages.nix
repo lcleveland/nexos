@@ -6,13 +6,13 @@ in
   options.system.settings.desktop_environment.kde = {
     excluded_packages = lib.mkOption {
       type = lib.types.listOf lib.types.pkgs;
-      default = [ ];
+      default = with pkgs.kdePackages; [
+        kate
+      ];
       description = "Packages to exclude from the KDE environment";
     };
   };
   config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "kde") {
-    environment.plasma6.excludePackages = with pkgs.kdePackages; [
-      kate
-    ];
+    environment.plasma6.excludePackages = desktop_environment.kde.excluded_packages;
   };
 }
