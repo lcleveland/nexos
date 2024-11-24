@@ -9,11 +9,12 @@ in
       default = with pkgs.kdePackages; [
         kate
         krdp
-      ] ++ (with pkgs; [ xterm ]);
+      ];
       description = "Packages to exclude from the KDE environment";
     };
   };
   config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "kde") {
     environment.plasma6.excludePackages = desktop_environment.kde.excluded_packages;
+    services.xserver.desktopManager.xterm.enable = false;
   };
 }
