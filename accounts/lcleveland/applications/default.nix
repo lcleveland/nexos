@@ -1,5 +1,6 @@
 { ... }: {
   imports = [
+    ./firacode
     ./firefox
     ./git
     ./lazygit
