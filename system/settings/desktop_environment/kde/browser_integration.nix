@@ -14,5 +14,6 @@ in
     environment.systemPackages = [
       pkgs.kdePackages.plasma-browser-integration
     ];
+    programs.chromium.enablePlasmaBrowserIntegration = true;
   };
 }
