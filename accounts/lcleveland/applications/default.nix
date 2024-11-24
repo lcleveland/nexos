@@ -5,5 +5,6 @@
     ./git
     ./lazygit
     ./nixvim
+    ./steam
   ];
 }
