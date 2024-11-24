@@ -6,7 +6,6 @@
       base_modules = [
         ./accounts
         home_manager_stable.nixosModules.home-manager
-        inputs.plasma_manager.homeManagerModules.plasma-manager
         ./system
       ];
       make_system = profile:
