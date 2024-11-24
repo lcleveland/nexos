@@ -11,7 +11,7 @@ in
       description = lib.mdDoc "Disable wayland for Firefox to stop crashing";
     };
   };
-  config = lib.mkIf (account.enable && firefox.disable_wayland) {
+  config = lib.mkIf (account.enable && firefox.enable && firefox.disable_wayland) {
     environment.variables = {
       MOZ_ENABLE_WAYLAND = 0;
     };
