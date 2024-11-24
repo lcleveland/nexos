@@ -13,7 +13,7 @@ in
   };
   config = lib.mkIf (account.enable && teams.enable) {
     environment.systemPackages = [
-      pkgs.teams
+      pkgs.teams-for-linux
     ];
   };
 }
