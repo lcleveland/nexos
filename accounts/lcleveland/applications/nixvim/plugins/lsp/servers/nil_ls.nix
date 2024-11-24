@@ -6,7 +6,7 @@ let
 in
 {
   config = lib.mkIf (account.enable && nixvim.enable) {
-    home-manager.users.${username}.programs.nixvim.plugins.${plugin_name}.servers.nil-ls = {
+    home-manager.users.${username}.programs.nixvim.plugins.${plugin_name}.servers.nil_ls = {
       enable = true;
       autostart = true;
     };
