@@ -24,16 +24,16 @@
   inputs = {
     home_manager_stable = {
       inputs.nixpkgs.follows = "nixpkgs_stable";
-      url = "github:nix-community/home-manager?ref=release-24.05";
+      url = "github:nix-community/home-manager?ref=release-24.11";
     };
     nixpkgs_stable = {
-      url = "github:nixos/nixpkgs?ref=nixos-24.05";
+      url = "github:nixos/nixpkgs?ref=nixos-24.11";
     };
     nixpkgs_unstable = {
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
     nixvim = {
-      url = "github:nix-community/nixvim/nixos-24.05";
+      url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs_stable";
     };
   };
