@@ -3,6 +3,7 @@
     ./firacode
     ./firefox
     ./git
+    ./icedtea
     ./lazygit
     ./nixvim
     ./orcaslicer
