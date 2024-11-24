@@ -1,19 +1,19 @@
 { config, lib, pkgs, ... }:
 let
   account = config.accounts.lcleveland.settings;
-  quickemu = config.accounts.lcleveland.applications.lazygit;
+  quickgui = config.accounts.lcleveland.applications.lazygit;
 in
 {
-  options.accounts.lcleveland.applications.quickemu = {
+  options.accounts.lcleveland.applications.quickgui = {
     enable = lib.mkOption {
       type = lib.types.bool;
       default = true;
-      description = lib.mdDoc "Enable quickemu support";
+      description = lib.mdDoc "Enable quickgui support";
     };
   };
-  config = lib.mkIf (account.enable && quickemu.enable) {
+  config = lib.mkIf (account.enable && quickgui.enable) {
     environment.systemPackages = [
-      pkgs.quickemu
+      pkgs.quickgui
     ];
   };
 }
