@@ -15,6 +15,6 @@ in
   };
   config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "kde") {
     environment.plasma6.excludePackages = desktop_environment.kde.excluded_packages;
-    services.xserver.desktopManager.xterm.enable = false;
+    services.xserver.excludePackages = with pkgs; [ xterm ];
   };
 }
