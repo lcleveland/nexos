@@ -4,7 +4,6 @@ let
 in
 {
   imports = [
-    #./browser_integration.nix
     ./display_manager
   ];
   config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "kde") {
