@@ -12,8 +12,8 @@ in
     };
   };
   config = lib.mkIf (account.enable && firefox.disable_wayland) {
-    home-manager.users.lcleveland.home.sessionVariables = {
-      MOZ_ENABLE_WAYLAND = "0";
+    environment.variables = {
+      MOZ_ENABLE_WAYLAND = 0;
     };
   };
 }
