@@ -5,5 +5,6 @@
     (import ./codeium-nvim { username = "lcleveland"; plugin_name = "codeium-nvim"; })
     (import ./lsp { username = "lcleveland"; plugin_name = "lsp"; })
     (import ./lsp-format { username = "lcleveland"; plugin_name = "lsp-format"; })
+    (import ./treesitter { username = "lcleveland"; plugin_name = "treesitter"; })
   ];
 }
