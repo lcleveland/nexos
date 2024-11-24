@@ -8,7 +8,8 @@ in
       type = lib.types.listOf lib.types.package;
       default = with pkgs.kdePackages; [
         kate
-      ];
+        krdp
+      ] ++ (with pkgs; [ xterm ]);
       description = "Packages to exclude from the KDE environment";
     };
   };
