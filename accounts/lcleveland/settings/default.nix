@@ -3,6 +3,7 @@
     ./email.nix
     ./enable.nix
     ./groups.nix
+    ./gtk.nix
     ./initial_password.nix
     ./is_normal_user.nix
     ./name.nix
