@@ -12,6 +12,6 @@ in
     };
   };
   config = lib.mkIf (account.enable && orcaslicer.enable) {
-    environment.systemPackages = with pkgs; [ orca-slicer ];
+    home-manager.users.lcleveland.home.packages = with pkgs; [ orca-slicer ];
   };
 }
