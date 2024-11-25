@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "NexOS";
 
   outputs = { home_manager_stable, nixpkgs_stable, nixpkgs_unstable, nixvim, plasma_manager, self }@inputs:
     let
