@@ -26,6 +26,7 @@
     {
       nixosConfigurations = {
         DREAM = make_system ./profiles/dream.nix;
+        LS-04380 = make_framework_16_system ./profiles/ls-04380.nix;
       };
     };
   inputs = {
