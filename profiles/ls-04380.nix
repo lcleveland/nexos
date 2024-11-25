@@ -6,4 +6,5 @@
   system.settings.boot.kernel.package = pkgs.linuxPackages_zen;
   system.settings.network.hostname = "LS-04380";
   system.settings.framework.enable = true;
+  system.setting.keyboard.variant = "colemak_dh";
 }
