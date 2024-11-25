@@ -10,6 +10,7 @@
     ./quickemu
     ./steam
     ./teams
+    ./termius
     ./vesktop
   ];
 }
