@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 let
   account = config.accounts.lcleveland.settings;
-  teams = config.accounts.lcleveland.applications.lazygit;
+  teams = config.accounts.lcleveland.applications.teams;
 in
 {
   options.accounts.lcleveland.applications.teams = {
@@ -12,7 +12,7 @@ in
     };
   };
   config = lib.mkIf (account.enable && teams.enable) {
-    environment.systemPackages = [
+    home-manager.users.lcleveland.home.packages = [
       pkgs.teams-for-linux
     ];
   };

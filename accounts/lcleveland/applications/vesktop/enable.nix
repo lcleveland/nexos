@@ -12,7 +12,7 @@ in
     };
   };
   config = lib.mkIf (account.enable && vesktop.enable) {
-    environment.systemPackages = [
+    home-manager.users.lcleveland.home.packages = [
       pkgs.vesktop
     ];
   };
