@@ -6,9 +6,11 @@ in
   options.system.settings.framework = {
     enable = lib.mkOption {
       type = lib.types.bool;
-      default = true;
+      default = false;
       description = "Enable framework support";
     };
   };
-  config = lib.mkIf framework.enable { };
+  config = lib.mkIf framework.enable {
+    services.fwupd.enable = framework.enable;
+  };
 }
