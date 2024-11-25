@@ -15,6 +15,13 @@
             inherit inputs;
           };
         };
+      make_framework_16_system = profile:
+        nixpkgs_stable.lib.nixosSystem {
+          modules = base_modules ++ [ profile ] ++ nixos_hardware.nixosModules.framework-16-amd-7040;
+          specialArgs = {
+            inherit inputs;
+          };
+        };
     in
     {
       nixosConfigurations = {
