@@ -3,6 +3,7 @@
     ./boot
     ./cpu
     ./desktop_environment
+    ./framework
     ./graphics
     ./keyboard
     ./language

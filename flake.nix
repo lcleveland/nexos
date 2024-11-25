@@ -1,7 +1,7 @@
 {
   description = "NexOS";
 
-  outputs = { home_manager_stable, nixpkgs_stable, nixpkgs_unstable, nixvim, plasma_manager, self }@inputs:
+  outputs = { home_manager_stable, nixos_hardware, nixpkgs_stable, nixpkgs_unstable, nixvim, plasma_manager, self }@inputs:
     let
       base_modules = [
         ./accounts
@@ -25,6 +25,9 @@
     home_manager_stable = {
       inputs.nixpkgs.follows = "nixpkgs_stable";
       url = "github:nix-community/home-manager?ref=release-24.11";
+    };
+    nixos_hardware = {
+      url = "github:NixOS/nixos-hardware/master";
     };
     nixpkgs_stable = {
       url = "github:nixos/nixpkgs?ref=nixos-24.11";
