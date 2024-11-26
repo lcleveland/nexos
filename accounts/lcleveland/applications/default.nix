@@ -12,5 +12,6 @@
     ./teams
     ./termius
     ./vesktop
+    ./zen_browser
   ];
 }
