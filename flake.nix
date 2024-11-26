@@ -1,7 +1,7 @@
 {
   description = "NexOS";
 
-  outputs = { home_manager_stable, nixos_hardware, nixpkgs_stable, nixpkgs_unstable, nixvim, plasma_manager, self }@inputs:
+  outputs = { home_manager_stable, nixos_hardware, nixpkgs_stable, nixpkgs_unstable, nixvim, plasma_manager, self, zen_browser }@inputs:
     let
       base_modules = [
         ./accounts
@@ -51,6 +51,9 @@
       url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs_stable";
       inputs.home-manager.follows = "home_manager_stable";
+    };
+    zen_browser = {
+      url = "github:0xc000022070/zen-browser-flake";
     };
   };
 }
