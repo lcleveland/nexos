@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, inputs, lib, ... }:
 let
   account = config.accounts.lcleveland.settings;
   system = config.system.settings.nix.host_platform;
@@ -14,7 +14,7 @@ in
   };
   config = lib.mkIf (account.enable && zen_browser.enable) {
     home-manager.users.lcleveland.home.packages = [
-      zen_browser.packages.${system}.default
+      inputs.zen_browser.packages.${system}.default
     ];
   };
 }
