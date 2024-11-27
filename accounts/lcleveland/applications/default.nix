@@ -13,5 +13,6 @@
     ./termius
     ./vesktop
     ./zen_browser
+    ./zoom
   ];
 }
