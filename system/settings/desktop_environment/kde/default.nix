@@ -4,6 +4,7 @@ let
 in
 {
   imports = [
+    ./desktop_portal.nix
     ./display_manager
     ./excluded_packages.nix
   ];
