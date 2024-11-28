@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }:
 let
-  desktop_environment = config.system.settings.desktop_environment.enabled_environment;
+  desktop_environment = config.system.settings.desktop_environment;
 in
 {
   options.system.settings.desktop_environment.gnome = {
