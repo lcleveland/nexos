@@ -10,7 +10,7 @@ in
       description = "Use triple buffering";
     };
   };
-  config = lib.mkIf (desktop_environment.enable && desktop_environment == "gnome") {
+  config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "gnome") {
     nixpkgs.overlays = [
       (final: prev: {
         mutter = prev.mutter.overrideAttrs (old: {
