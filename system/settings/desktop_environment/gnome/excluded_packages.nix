@@ -13,7 +13,7 @@ in
     };
   };
   config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "gnome") {
-    environment.gnome.excludePackages = desktop_environment.kde.excluded_packages;
+    environment.gnome.excludePackages = desktop_environment.gnome.excluded_packages;
     services.xserver.excludePackages = with pkgs; [ xterm ];
   };
 }
