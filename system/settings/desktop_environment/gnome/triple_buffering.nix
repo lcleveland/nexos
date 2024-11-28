@@ -11,6 +11,7 @@ in
     };
   };
   config = lib.mkIf (desktop_environment.enable && desktop_environment.enabled_environment == "gnome") {
+    nixpkgs.config.allowAliases = false;
     nixpkgs.overlays = [
       (final: prev: {
         mutter = prev.mutter.overrideAttrs (old: {
