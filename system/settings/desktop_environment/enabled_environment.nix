@@ -6,6 +6,7 @@ in
   options.system.settings.desktop_environment = {
     enabled_environment = lib.mkOption {
       type = lib.types.enum [
+        "gnome"
         "kde"
       ];
       default = "kde";
