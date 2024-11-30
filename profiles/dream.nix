@@ -7,4 +7,5 @@
   system.settings.boot.kernel.package = pkgs.linuxPackages_zen;
   system.settings.network.hostname = "DREAM";
   system.settings.desktop_environment.enabled_environment = "gnome";
+  accounts.lcleveland.applications.orcaslicer.enable = false;
 }
