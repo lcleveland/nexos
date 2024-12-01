@@ -1,7 +1,7 @@
 {
   description = "NexOS";
 
-  outputs = { home_manager_stable, nixos_hardware, nixpkgs_stable, nixpkgs_unstable, nixvim, plasma_manager, self, zen_browser }@inputs:
+  outputs = { home_manager_stable, nixos_hardware, nixpkgs_stable, nixvim, plasma_manager, self, zen_browser }@inputs:
     let
       base_modules = [
         ./accounts
@@ -39,9 +39,6 @@
     };
     nixpkgs_stable = {
       url = "github:nixos/nixpkgs?ref=nixos-24.11";
-    };
-    nixpkgs_unstable = {
-      url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
     nixvim = {
       url = "github:nix-community/nixvim";
