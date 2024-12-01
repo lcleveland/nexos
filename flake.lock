@@ -265,22 +265,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_unstable": {
-      "locked": {
-        "lastModified": 1732837521,
-        "narHash": "sha256-jNRNr49UiuIwaarqijgdTR2qLPifxsVhlJrKzQ8XUIE=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "970e93b9f82e2a0f3675757eb0bfc73297cc6370",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nixvim": {
       "inputs": {
         "devshell": "devshell",
@@ -360,7 +344,6 @@
         "home_manager_stable": "home_manager_stable",
         "nixos_hardware": "nixos_hardware",
         "nixpkgs_stable": "nixpkgs_stable",
-        "nixpkgs_unstable": "nixpkgs_unstable",
         "nixvim": "nixvim",
         "plasma_manager": "plasma_manager",
         "zen_browser": "zen_browser"
