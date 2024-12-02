@@ -1,5 +1,6 @@
 { ... }: {
   imports = [
+    ./bambu_studio
     ./firacode
     ./firefox
     ./git
