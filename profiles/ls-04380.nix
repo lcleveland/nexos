@@ -8,4 +8,5 @@
   system.settings.framework.enable = true;
   system.settings.keyboard.keymap.variant = "colemak_dh";
   system.settings.desktop_environment.enabled_environment = "gnome";
+  accounts.lcleveland.applications.orcaslicer.enable = false;
 }
