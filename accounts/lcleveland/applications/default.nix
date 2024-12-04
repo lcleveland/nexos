@@ -12,6 +12,7 @@
     ./steam
     ./teams
     ./termius
+    ./unetbootin
     ./vesktop
     ./zen_browser
     ./zoom
