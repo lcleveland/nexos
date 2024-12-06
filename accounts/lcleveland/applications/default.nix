@@ -8,6 +8,7 @@
     ./lazygit
     ./nixvim
     ./orcaslicer
+    ./protonup
     ./quickemu
     ./steam
     ./teams
