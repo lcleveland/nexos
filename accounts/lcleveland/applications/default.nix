@@ -3,6 +3,7 @@
     ./bambu_studio
     ./firacode
     ./firefox
+    ./gamescope
     ./git
     ./icedtea
     ./lazygit
