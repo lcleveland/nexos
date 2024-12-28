@@ -41,7 +41,7 @@
       url = "github:nixos/nixpkgs?ref=nixos-24.11";
     };
     nixvim = {
-      url = "github:nix-community/nixvim";
+      url = "github:nix-community/nixvim?ref=nixos-24.11";
       inputs.nixpkgs.follows = "nixpkgs_stable";
     };
     plasma_manager = {
